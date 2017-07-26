@@ -12,7 +12,6 @@ import org.mybatis.generator.api.dom.java.Parameter;
 import org.mybatis.generator.api.dom.java.PrimitiveTypeWrapper;
 import org.mybatis.generator.api.dom.java.TopLevelClass;
 import org.mybatis.generator.api.dom.xml.Attribute;
-import org.mybatis.generator.api.dom.xml.Element;
 import org.mybatis.generator.api.dom.xml.TextElement;
 import org.mybatis.generator.api.dom.xml.XmlElement;
 
