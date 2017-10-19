@@ -33,7 +33,7 @@ public class CustomWherePlugin extends PluginAdapter{
 	public boolean sqlMapExampleWhereClauseElementGenerated(XmlElement element, IntrospectedTable introspectedTable) {
 		XmlElement isNotNullElement = new XmlElement("if"); 
         isNotNullElement.addAttribute(new Attribute("test", "customWhere != null"));
-        isNotNullElement.addElement(new TextElement(" and ${customWhere} "));
+        isNotNullElement.addElement(new TextElement(" ${customWhere} "));
         XmlElement whereElement = (XmlElement)element.getElements().get(0);
         whereElement.addElement(isNotNullElement);
 		return super.sqlMapExampleWhereClauseElementGenerated(element, introspectedTable);
